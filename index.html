@@ -98,7 +98,49 @@
     .searchBar:hover .searchBtn #searchText{
         display: block;
     }
-
+    .subHeadline{
+        padding: 15px;
+        font-size: 25px;
+    }
+    .iconsGrid{
+        width: 70%;
+        height: 500px;
+        /*background-color: red;*/
+        margin: auto;
+        margin-top: 30px;
+    }
+    .mainIconsCard{
+        width: 200px;
+        height: 140px;
+        display: inline-block;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        padding-top: 20px;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+    .mainIconsCard:hover{
+        box-shadow: rgba(147, 216, 248, 1) 0px 0px 36px 0px, rgba(147, 216, 248, 0) 0px 0px 0px 1px;
+        /*box-shadow: rgba(0, 0, 215, 0.3) 0px 0px 36px 0px, rgba(0, 0, 215, 0) 0px 0px 0px 1px;*/
+    }
+    .mainIcons{
+        width: 60px;
+        height: 60px;
+    }
+    h4{
+        font-weight: bold;
+        font-size: 16px;
+    }
+    .postBtnLarge{
+        width: 650px;
+        height: 50px;
+        font-size: 24px;
+        /*margin-left: 200px;*/
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        margin-top: 30px;
+    }
 
 </style>
 </head>
@@ -129,60 +171,61 @@
     </div>
 </header>
 <!-- Icons Grid-->
-<section class="features-icons">
-    <h2>Explore by categories</h2>
+<section class="features-icons iconsGrid">
+    <h2 class="subHeadline">Explore by categories</h2>
     <div class="container text-center">
         <div class="row">
             <div class="col-lg-3">
-                <div class="features-icons-item mb-lg-3">
-                    <div ><img src="assets/images/icons8-home-50.png"></div>
+                <div class="features-icons-item mb-lg-3 mainIconsCard">
+                    <div><img class="mainIcons" src="assets/images/icons8-home-50.png"></div>
                     <h4>Property</h4>
                 </div>
             </div>
             <div class="col-lg-3">
-                <div class="features-icons-item mb-lg-3">
-                    <div><img src="assets/images/icons8-jeep-64.png"></div>
+                <div class="features-icons-item mb-lg-3 mainIconsCard">
+                    <div><img class="mainIcons" src="assets/images/icons8-jeep-64.png"></div>
                     <h4>Vehicles</h4>
                 </div>
             </div>
             <div class="col-lg-3">
-                <div class="features-icons-item mb-lg-3">
-                    <div><img src="assets/images/icons8-phone-48.png"></div>
+                <div class="features-icons-item mb-lg-3 mainIconsCard">
+                    <div><img class="mainIcons" src="assets/images/icons8-phone-48.png"></div>
                     <h4>Electronics</h4>
                 </div>
             </div>
             <div class="col-lg-3">
-                <div class="features-icons-item mb-lg-3">
-                    <div><img src="assets/images/icons8-service-64.png"></div>
+                <div class="features-icons-item mb-lg-3 mainIconsCard">
+                    <div><img class="mainIcons" src="assets/images/icons8-service-64.png"></div>
                     <h4>Services</h4>
                 </div>
             </div>
             <div class="col-lg-3">
-                <div class="features-icons-item mb-lg-3">
-                    <div><img src="assets/images/icons8-dig-64.png"></div>
+                <div class="features-icons-item mb-lg-3 mainIconsCard">
+                    <div><img class="mainIcons" src="assets/images/icons8-dig-64.png"></div>
                     <h4>Home & Garden</h4>
                 </div>
             </div>
             <div class="col-lg-3">
-                <div class="features-icons-item mb-lg-3">
-                    <div><img src="assets/images/icons8-financial-analytics-64.png"></div>
+                <div class="features-icons-item mb-lg-3 mainIconsCard">
+                    <div><img class="mainIcons" src="assets/images/icons8-financial-analytics-64.png"></div>
                     <h4>Business</h4>
                 </div>
             </div>
             <div class="col-lg-3">
-                <div class="features-icons-item mb-lg-3">
-                    <div><img src="assets/images/icons8-jobs-58.png"></div>
+                <div class="features-icons-item mb-lg-3 mainIconsCard">
+                    <div><img class="mainIcons" src="assets/images/icons8-jobs-58.png"></div>
                     <h4>Jobs</h4>
                 </div>
             </div>
             <div class="col-lg-3">
-                <div class="features-icons-item mb-lg-3">
-                    <div><img src="assets/images/icons8-online-shop-shopping-bag-48.png"></div>
+                <div class="features-icons-item mb-lg-3 mainIconsCard">
+                    <div><img class="mainIcons" src="assets/images/icons8-online-shop-shopping-bag-48.png"></div>
                     <h4>Commercial</h4>
                 </div>
             </div>
         </div>
     </div>
+    <div><a class="btn postBtn postBtnLarge" href="#signup">Post Your Ad</a></div>
 </section>
 
 <script src="assets/fontawesome-free-6.5.1-web/js/all.min.js"></script>
