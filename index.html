@@ -151,6 +151,34 @@
     .border-bottom{
         border-bottom: 1px solid black !important;
     }
+    .whatsapp-icon {
+        font-size: 1.2em;
+    }
+    #brandImgFooter{
+        width: 85px;
+        height: 85px;
+        position: absolute;
+        bottom: 0px;
+        right: 100px;
+        background-color: rgba(0, 0, 0, 0.05);
+        background-blend-mode: multiply;
+    }
+    #brandImgFooter {
+        width: 72px;
+        height: 72px;
+        position: absolute;
+        bottom: 0px;
+        right: 180px;
+        background-image: url('assets/images/LogoFooter.png'); /* Set your image here */
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.05); /* Add a semi-transparent black overlay */
+        background-blend-mode: multiply; /* Blend the background color with the image */
+    }
+    .copyright{
+        background-color: rgba(0, 0, 0, 0.05);
+        padding-left: 100px !important;
+    }
+
 
 </style>
 </head>
@@ -254,12 +282,12 @@
                 <i class="fab fa-facebook-f"></i>
             </a>
             <a href="" class="me-4 text-reset">
-                <i class="fab fa-twitter"></i>
+                <i class="fa-brands fa-x-twitter"></i>
             </a>
             <a href="" class="me-4 text-reset">
                 <i class="fab fa-google"></i>
             </a>
-            <a href="" class="me-4 text-reset">
+            <!--<a href="" class="me-4 text-reset">
                 <i class="fab fa-instagram"></i>
             </a>
             <a href="" class="me-4 text-reset">
@@ -267,7 +295,7 @@
             </a>
             <a href="" class="me-4 text-reset">
                 <i class="fab fa-github"></i>
-            </a>
+            </a>-->
         </div>
         <!-- Right -->
     </section>
@@ -351,7 +379,8 @@
                         info@example.com
                     </p>
                     <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-                    <p><i class="fas fa-phone me-3"></i> + 01 234 567 89</p>
+                    <p><i class="fa-brands fa-whatsapp me-3 whatsapp-icon"></i> + 01 234 567 88</p>
+
                 </div>
                 <!-- Grid column -->
             </div>
@@ -361,9 +390,10 @@
     <!-- Section: Links  -->
 
     <!-- Copyright -->
-    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-        © 2021 Copyright:
-        <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    <div class="copyright text-left p-4">
+        © Copyright 2025, All Rights Reserved.
+        <a class="text-reset fw-bold" href="#">SLAnything.lk</a>
+        <div id="brandImgFooter"></div>
     </div>
     <!-- Copyright -->
 </footer>
