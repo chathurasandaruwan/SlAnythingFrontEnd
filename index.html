@@ -16,7 +16,12 @@
         left: 110px;
     }
     .navbarCust{
-        background-color: #3342FF;!important;
+        /*background-color: #93D8F8;!important;*/
+        background-image: url('assets/images/hero_bg_1.jpg');
+        position: fixed;
+        width: 100vw;
+        z-index: 1000;
+        /*background-color: #3342FF;!important;*/
     }
     .btnCust{
         background-color: #30389B;
@@ -48,8 +53,8 @@
         margin-top: 10px;
     }
     .masthead{
-        background-color: #3342FF;
-        height: 320px;
+        /*background-color: #3342FF;*/
+        height: 60vh;
     }
     .searchBar{
         width: 850px;
@@ -60,7 +65,7 @@
         left: 0;
         right: 0;
         margin: auto;
-        margin-top: 150px;
+        margin-top: 25%;
     }
     .searchBtn{
         background-color: #F4D03F;
@@ -100,19 +105,46 @@
         display: block;
     }
     .subHeadline{
-        padding: 15px;
-        font-size: 25px;
+        padding: 55px;
+        color: black;
+        opacity: 70%;
+    }
+    .subHeadline h2{
+        width: 500px;
+        height: 45px;
+        background-color: #93D8F8;
+        border-radius: 20px;
+        text-align: center;
+        font-size: 30px;
     }
     .iconsGrid{
         width: 70%;
-        height: 500px;
+        height: 80vh;
         /*background-color: red;*/
         margin: auto;
-        margin-top: 30px;
+        /*margin-top: 30px;*/
+    }
+    .features-iconsCust{
+        width: 100%;
+        height: 80vh;
+        position: relative;
+
+    }
+    .back-img {
+        width: 100%;
+        height: 100%;
+        background-image: url('https://images.unsplash.com/photo-1494526585095-c41746248156?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80');
+    /*  background-color: red;*/
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        z-index: 1;
     }
     .mainIconsCard{
         width: 200px;
         height: 140px;
+        background-color: white;
         display: inline-block;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
         padding-top: 20px;
@@ -142,8 +174,32 @@
         margin: auto;
         margin-top: 30px;
     }
+    #works{
+        width: 100%;
+        height: 80vh;
+        position: relative;
+    }
+    #works .second-img {
+        width: 100%;
+        height: 100%;
+        background-image: url('https://images.unsplash.com/photo-1560185013-ead8277ef8ea?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80');
+     /*background-color: red;*/
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .back-img, .second-img{
+        background-attachment: fixed;
+    }
+
+
+
+
     .footerCust{
-        background-color: #93D8F8 !important;
+        background-color: #efefef !important;
         position: relative;
         height: fit-content;
         bottom: 0;
@@ -160,7 +216,8 @@
         position: absolute;
         bottom: 0px;
         right: 100px;
-        background-color: rgba(0, 0, 0, 0.05);
+        /*background-color: rgba(0, 0, 0, 0.05);*/
+        background-color: #efefef;
         background-blend-mode: multiply;
     }
     #brandImgFooter {
@@ -169,7 +226,7 @@
         position: absolute;
         bottom: 0px;
         right: 180px;
-        background-image: url('assets/images/LogoFooter.png'); /* Set your image here */
+        background-image: url('assets/images/LogoFooter.png');
         background-size: cover;
         background-color: rgba(0, 0, 0, 0.05); /* Add a semi-transparent black overlay */
         background-blend-mode: multiply; /* Blend the background color with the image */
@@ -184,7 +241,7 @@
 </head>
 <body>
 <nav class="navbar navbarCust navbar-light static-top">
-    <a class="navbar-brand"  href="#!"><img id="brandImg" src="assets/images/SL.png"></a>
+<!--    <a class="navbar-brand"  href="#!"><img id="brandImg" src="assets/images/SL.png"></a>-->
     <div class="containerCust container">
         <a class="btn btnCust" href="#signup">Register</a>
         <a class="btn btnCust" href="#signup">Sign in</a>
@@ -192,7 +249,7 @@
     </div>
 </nav>
 <!-- Masthead-->
-<header class="masthead">
+<header class="masthead" style="background-image: url('assets/images/hero_bg_1.jpg')">
     <div class="container position-relative">
         <div class="row justify-content-center">
             <div class="col-xl-6">
@@ -209,61 +266,74 @@
     </div>
 </header>
 <!-- Icons Grid-->
-<section class="features-icons iconsGrid">
-    <h2 class="subHeadline">Explore by categories</h2>
-    <div class="container text-center">
-        <div class="row">
-            <div class="col-lg-3">
-                <div class="features-icons-item mb-lg-3 mainIconsCard">
-                    <div><img class="mainIcons" src="assets/images/icons8-home-50.png"></div>
-                    <h4>Property</h4>
+<section class="features-icons features-iconsCust">
+    <div class="back-img iconsGrid">
+        <div class="subHeadline">
+            <h2>Explore by categories</h2>
+        </div>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-lg-3">
+                    <a href="pages/properties.html">
+                        <div class="features-icons-item mb-lg-3 mainIconsCard">
+                            <div><img class="mainIcons" src="assets/images/icons8-home-50.png"></div>
+                            <h4>Property</h4>
+                        </div>
+                    </a>
                 </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="features-icons-item mb-lg-3 mainIconsCard">
-                    <div><img class="mainIcons" src="assets/images/icons8-jeep-64.png"></div>
-                    <h4>Vehicles</h4>
+                <div class="col-lg-3">
+                    <div class="features-icons-item mb-lg-3 mainIconsCard">
+                        <div><img class="mainIcons" src="assets/images/icons8-jeep-64.png"></div>
+                        <h4>Vehicles</h4>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="features-icons-item mb-lg-3 mainIconsCard">
-                    <div><img class="mainIcons" src="assets/images/icons8-phone-48.png"></div>
-                    <h4>Electronics</h4>
+                <div class="col-lg-3">
+                    <div class="features-icons-item mb-lg-3 mainIconsCard">
+                        <div><img class="mainIcons" src="assets/images/icons8-phone-48.png"></div>
+                        <h4>Electronics</h4>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="features-icons-item mb-lg-3 mainIconsCard">
-                    <div><img class="mainIcons" src="assets/images/icons8-service-64.png"></div>
-                    <h4>Services</h4>
+                <div class="col-lg-3">
+                    <div class="features-icons-item mb-lg-3 mainIconsCard">
+                        <div><img class="mainIcons" src="assets/images/icons8-service-64.png"></div>
+                        <h4>Services</h4>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="features-icons-item mb-lg-3 mainIconsCard">
-                    <div><img class="mainIcons" src="assets/images/icons8-dig-64.png"></div>
-                    <h4>Home & Garden</h4>
+                <div class="col-lg-3">
+                    <div class="features-icons-item mb-lg-3 mainIconsCard">
+                        <div><img class="mainIcons" src="assets/images/icons8-dig-64.png"></div>
+                        <h4>Home & Garden</h4>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="features-icons-item mb-lg-3 mainIconsCard">
-                    <div><img class="mainIcons" src="assets/images/icons8-financial-analytics-64.png"></div>
-                    <h4>Business</h4>
+                <div class="col-lg-3">
+                    <div class="features-icons-item mb-lg-3 mainIconsCard">
+                        <div><img class="mainIcons" src="assets/images/icons8-financial-analytics-64.png"></div>
+                        <h4>Business</h4>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="features-icons-item mb-lg-3 mainIconsCard">
-                    <div><img class="mainIcons" src="assets/images/icons8-jobs-58.png"></div>
-                    <h4>Jobs</h4>
+                <div class="col-lg-3">
+                    <div class="features-icons-item mb-lg-3 mainIconsCard">
+                        <div><img class="mainIcons" src="assets/images/icons8-jobs-58.png"></div>
+                        <h4>Jobs</h4>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="features-icons-item mb-lg-3 mainIconsCard">
-                    <div><img class="mainIcons" src="assets/images/icons8-online-shop-shopping-bag-48.png"></div>
-                    <h4>Commercial</h4>
+                <div class="col-lg-3">
+                    <div class="features-icons-item mb-lg-3 mainIconsCard">
+                        <div><img class="mainIcons" src="assets/images/icons8-online-shop-shopping-bag-48.png"></div>
+                        <h4>Commercial</h4>
+                    </div>
                 </div>
             </div>
         </div>
+        <div><a class="btn postBtn postBtnLarge" href="#signup">Post Your Ad</a></div>
     </div>
-    <div><a class="btn postBtn postBtnLarge" href="#signup">Post Your Ad</a></div>
+</section>
+<!--about-->
+<section id="works">
+    <div class="second-img"></div>
+    <div class="title">
+        <h2>About</h2>
+    </div>
 </section>
 
 <!-- Footer -->
